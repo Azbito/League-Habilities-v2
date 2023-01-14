@@ -1,0 +1,15 @@
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  strong {
+    cursor: pointer;
+  }
+}
+
+.patch {
+   margin-top: 1.5rem;
+   border-radius: 5px;
+}

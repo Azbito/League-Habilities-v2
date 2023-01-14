@@ -1,0 +1,32 @@
+.name {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  .title {
+    font-size: 1.6rem;
+    background-color: rgb(76, 136, 79);
+    padding: .5rem 1rem .5rem 1rem;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .splashart {
+    margin-top: -1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .description {
+    margin-top: 1rem;
+    text-align: center;
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    margin-top: 5%
+  }
+}

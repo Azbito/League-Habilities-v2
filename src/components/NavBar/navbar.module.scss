@@ -1,0 +1,51 @@
+
+
+.bar {
+  background-color: rgb(39, 39, 39);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+
+  color: white;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  
+}
+
+.logo {
+  margin-left: 1rem;
+  width: 18%;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  strong {
+    color: rgb(168, 107, 107);
+  }
+}
+
+.item {
+  width: 20%;
+  display: flex;
+  gap: 1rem;
+  margin: .5% 3% 0 0;
+  }
+
+.link {
+  transition: 0.2s;
+  text-decoration: none;
+
+}
+
+.link:hover {
+    border-radius: .2rem;
+    background-color: #777; 
+    padding: .2rem .4rem .2rem .4rem;
+    cursor: pointer;
+}
+
+

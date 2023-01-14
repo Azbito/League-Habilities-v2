@@ -1,0 +1,30 @@
+.name { 
+       
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    text-shadow: 3px 0 0 #9399599d;
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  .splashart {
+    box-shadow: 0 4px 8px 0 rgba(67, 71, 36, 0.37);
+    border-radius: 5px;
+  } 
+
+  .description {
+    margin-top: 1rem;
+    text-align: center;
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    margin-top: 5%;
+  }
+ 
+}

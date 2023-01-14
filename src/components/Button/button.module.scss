@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  background-color:rgb(146, 40, 40);
+  padding: .5rem .3rem .5rem .3rem;
+
+  &:hover {
+    transition: .4s;
+    background-color:rgb(216, 103, 103)
+  } 
+}
+
+.blue {
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: .5rem .3rem .5rem .3rem;
+
+  background-color: rgb(39, 38, 95);
+  
+  &:hover {
+    transition: .3s;
+    background-color:rgb(82, 80, 216);
+  }
+}
