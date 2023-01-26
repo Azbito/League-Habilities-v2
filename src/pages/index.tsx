@@ -3,6 +3,7 @@ import { topChampionProps } from "@/@types/topChampionInterface";
 import AdBox from "@/components/AdBox";
 import ChampionCard from "@/components/ChampionCard";
 import Divider from "@/components/Divider";
+import End from "@/components/End";
 import FocusRelease from "@/components/FocusNews";
 import InfoBox from "@/components/Infobox";
 import News from "@/components/News";
@@ -11,7 +12,6 @@ import { getChampionById } from "@/services/apiChampionId";
 import { getSummonersName } from "@/services/apisummoner";
 import { getTopChampion } from "@/services/apitopchampion";
 import { Slide } from "@mui/material";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../styles/home.module.scss"
@@ -30,17 +30,24 @@ export default function Home() {
     revisionDate: 0,
     summonerLevel: ''
   })
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const [championName, setChampionName] = useState<string>('')
   console.log(championName)
   async function getSummonerId() {
-    const res: summonerProps = await getSummonersName(name)
-    const resTopChampion: topChampionProps[] = await getTopChampion(res.id)
-    const resChampion: any = await getChampionById(resTopChampion[0].championId)
-    console.log(resChampion)
+    setIsLoading(true)
+    try {
+      const res: summonerProps = await getSummonersName(name)
+      const resTopChampion: topChampionProps[] = await getTopChampion(res.id)
+      const resChampion: any = await getChampionById(resTopChampion[0].championId)
+      setInfo(res)
+      setChampionName(resChampion.response)
+      setIsLoading(false)
+    } catch (e) {
+      setIsLoading(false)
+      alert("Error")
+    }
 
-    setInfo(res)
-    setChampionName(resChampion.response)
   }
 
   return (
@@ -71,7 +78,9 @@ export default function Home() {
         <FocusRelease title="Celebrate Chinese New Year!" image="/images/thresh.jpg" alt="thresh new skin" width={220} height={400} description="Enjoy with our mythmakers the festival and battle with 'em" margin="0"
           buttonProps={{
             title: "Join them",
-            margin: "1rem 0 0 0"
+            margin: "1rem 0 0 0",
+            onClick: () => router.push('/release')
+
           }} />
 
         <ChampionCard margin="7rem 3rem 0 0" title="Energize yourself!" image="/images/zeri.jpg" alt="Zeri" description="Don't you dare to steal her thunder"
@@ -95,7 +104,8 @@ export default function Home() {
           }}
           buttonProps={{
             title: "Search",
-            onClick: getSummonerId
+            onClick: () => !isLoading ? getSummonerId() : {},
+            isLoading: isLoading
           }}
 
           image={info.profileIconId != 0 && `http://ddragon.leagueoflegends.com/cdn/13.1.1/img/profileicon/${info.profileIconId}.png`}
@@ -124,19 +134,8 @@ export default function Home() {
 
       <News image="/images/newspaper.png" alt="newspaper" title="Extry! Extry!" description="Stay tuned. Riot always publish new updates. Check it out before you get nerfed!" strong="Click here to go to Riot site" linkimage="/images/link.png" linkalt="link" linkto="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" patchimage="/images/patch.jpg" patchalt="patch_note_lol_riot_games" />
 
-      <div className={styles.end}>
-        <div className={styles.socialmedialogos}>
-          <Image className={styles.facebook} src="/images/facebook.png" alt="facebook" width={30} height={30} onClick={() => router.push('https://www.facebook.com')} />
-          <Image className={styles.instagram} src="/images/instagram.png" alt="instagram" width={30} height={30}
-            onClick={() => router.push('https://www.instagram.com')} />
-          <Image className={styles.discord} src="/images/discord.png" alt="discord" width={32} height={32}
-            onClick={() => router.push('https://www.discord.com')}
-          />
-          <Image className={styles.github} src="/images/github.png" alt="github" width={30} height={30}
-            onClick={() => router.push('https://github.com/Azbito')} />
-        </div>
-        <p className={styles.disclaimer}>All rights of League of Legends belongs to Riot Games. This website is not for commercial purpose.</p>
-      </div>
+      <End />
+
     </div>
   )
 }

@@ -1,0 +1,42 @@
+.emotes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  img {
+    margin-top: 2rem;
+    width: 10rem;
+    border-radius: .8rem;
+  }
+
+}
+
+.boxtitle {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.titles {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  .firsttitle {
+    margin-right: 36rem;
+  }
+
+  .secondtitle {
+    margin: -1.5rem 12rem 0 0;
+  }
+
+  .thirdtitle {
+    margin: -1.5rem 0 0 12rem;
+  }
+
+  .fourthtitle {
+    margin: -1.5rem 0 0 36rem;
+  }
+}

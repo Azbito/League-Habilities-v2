@@ -1,0 +1,49 @@
+.end {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: rgba(73, 53, 104, 0.411);
+  display: flex;
+  height: 100%;
+
+}
+
+.socialmedialogos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.facebook:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  filter: invert(26%) sepia(79%) saturate(7000%) hue-rotate(201deg);
+}
+
+.instagram:hover {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  filter: invert(26%) sepia(79%) saturate(1722%)  brightness(84%) contrast(97%);
+}
+
+.discord:hover {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  filter: invert(26%) sepia(79%) saturate(7000%) hue-rotate(201deg);
+}
+
+
+.github:hover {
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  filter: invert(87%) sepia(66%) saturate(4130%) hue-rotate(163deg) brightness(111%) contrast(111%);
+}
+
+.disclaimer {
+  margin-left: 60rem;
+  font-weight: 200;
+  text-align: end;
+  width: 15%;
+  font-size: .7rem;
+}

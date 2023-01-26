@@ -1,11 +1,9 @@
 
 
 .bar {
-  background-color: rgb(39, 39, 39);
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-
-
-  color: white;
+  background-color: rgba(255, 255, 255, 0.24);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  backdrop-filter: blur(0.5rem);
   width: 100%;
   height: 3rem;
   display: flex;
@@ -18,13 +16,14 @@
 
 .logo {
   margin-left: 1rem;
-  width: 18%;
+  width: 20%;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: .2rem;
   cursor: pointer;
-
   strong {
-    color: rgb(168, 107, 107);
+    font-weight: 400;
+
+    color: rgb(168, 168, 168);
   }
 }
 
@@ -32,7 +31,7 @@
   width: 20%;
   display: flex;
   gap: 1rem;
-  margin: .5% 3% 0 0;
+  margin: .3% 3% 0 0;
   }
 
 .link {

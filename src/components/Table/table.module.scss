@@ -1,0 +1,29 @@
+.table {
+  width: 50rem;
+  background-color: rgb(42, 48, 48);
+}
+
+.title {
+  height: 3rem;
+  background-color: rgb(41, 92, 92);
+}
+
+.even {
+  height: 2rem
+}
+
+.even:hover {
+  background: rgb(95, 95, 95);
+}
+
+.odd {
+  height: 2rem
+}
+
+.odd:hover {
+  background-color: rgb(59, 59, 59);
+}
+
+.tableinfo {
+  text-align: center;
+}

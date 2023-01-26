@@ -1,3 +1,4 @@
+import End from '@/components/End'
 import NavBar from '@/components/NavBar'
 import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'

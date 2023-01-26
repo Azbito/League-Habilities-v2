@@ -1,0 +1,15 @@
+.passinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 2rem;  
+  }
+
+  .description {
+    width: 50%;
+    text-align: center;
+  }
+}

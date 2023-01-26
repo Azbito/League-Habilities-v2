@@ -1,0 +1,13 @@
+.iconsbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.title {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
