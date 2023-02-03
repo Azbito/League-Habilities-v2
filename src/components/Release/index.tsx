@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from './releaseimage.module.scss'
+import styles from './releasebox.module.scss'
 
 type ReleaseImageProps = {
   releaseimage: string,
@@ -7,7 +7,7 @@ type ReleaseImageProps = {
   releaseimgmargin?: string
 }
 
-export default function ReleaseImage({ releaseimage, releaseimgalt, releaseimgmargin }: ReleaseImageProps) {
+export default function ReleaseInfo({ releaseimage, releaseimgalt, releaseimgmargin }: ReleaseImageProps) {
   return (
     <div className={styles.release}>
       <div className={styles.banner}>

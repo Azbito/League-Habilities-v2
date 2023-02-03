@@ -1,4 +1,4 @@
-import styles from '../../styles/miscellaneous.module.scss'
+import styles from './miscellaneous.module.scss'
 
 type MiscellaneousProps = {
   img: string,

@@ -6,7 +6,7 @@ import Icons from '@/components/Icons'
 import Items from '@/components/Items'
 import Miscellaneous from '@/components/Miscellaneous'
 import Prestige from '@/components/Prestige'
-import ReleaseImage from '@/components/ReleaseImage'
+import ReleaseInfo from '@/components/Release'
 import Rewards from '@/components/Rewards'
 import Table from '@/components/Table'
 import miscellaneous from '@/utils/miscellaneousData'
@@ -16,7 +16,7 @@ export default function Release() {
   return (
     <div className={styles.container}>
 
-      <ReleaseImage releaseimage='/images/release.jpg' releaseimgalt='Garen' />
+      <ReleaseInfo releaseimage='/images/release.jpg' releaseimgalt='Garen' />
       <Prestige title="New Prestige Skin!" description='She left Shurima to battle as a Mythmaker. You can play as Prestige Mythmaker Sivir Skin on League of Legends by getting the pass on the game. With 2,000 event tokens, you are able to purchase it.' splashart='/images/sivir.jpg' alt="Prestige skin" height="18rem" width="30rem" borderRadius='1rem' margin='3rem 4rem 0 0' />
 
 

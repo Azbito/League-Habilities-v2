@@ -1,4 +1,4 @@
-import styles from '../../styles/icons.module.scss'
+import styles from './icons.module.scss'
 
 type IconsProps = {
   icon: string,

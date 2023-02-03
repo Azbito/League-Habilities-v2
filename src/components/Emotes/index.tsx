@@ -1,4 +1,4 @@
-import styles from '../../styles/emotes.module.scss'
+import styles from './emotes.module.scss'
 
 type EmotesProps = {
   emote1: string,

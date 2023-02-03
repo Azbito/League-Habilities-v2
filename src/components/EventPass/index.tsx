@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from '../../styles/eventpass.module.scss'
+import styles from './eventpass.module.scss'
 
 type EventPassProps = {
   title: string,
