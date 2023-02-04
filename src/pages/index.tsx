@@ -33,7 +33,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const [championName, setChampionName] = useState<string>('')
-  console.log(championName)
+
   async function getSummonerId() {
     setIsLoading(true)
     try {
@@ -133,8 +133,6 @@ export default function Home() {
       <Divider />
 
       <News image="/images/newspaper.png" alt="newspaper" title="Extry! Extry!" description="Stay tuned. Riot always publish new updates. Check it out before you get nerfed!" strong="Click here to go to Riot site" linkimage="/images/link.png" linkalt="link" linkto="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" patchimage="/images/patch.jpg" patchalt="patch_note_lol_riot_games" />
-
-      <End />
 
     </div>
   )

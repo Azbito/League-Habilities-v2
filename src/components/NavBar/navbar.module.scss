@@ -11,7 +11,6 @@
   align-items: center;
   position: fixed;
   z-index: 2;
-  
 }
 
 .logo {
@@ -20,9 +19,9 @@
   font-size: 1.2rem;
   letter-spacing: .2rem;
   cursor: pointer;
+
   strong {
     font-weight: 400;
-
     color: rgb(168, 168, 168);
   }
 }
@@ -30,9 +29,8 @@
 .item {
   width: 20%;
   display: flex;
-  gap: 1rem;
-  margin: .3% 3% 0 0;
-  }
+  gap: .9rem;
+  margin: 1rem -3rem  }
 
 .link {
   transition: 0.2s;

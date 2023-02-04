@@ -1,10 +1,11 @@
 .end {
-  margin-top: 2rem;
   width: 100%;
-  background-color: rgba(73, 53, 104, 0.411);
-  display: flex;
-  height: 100%;
 
+  background-color: rgb(73, 53, 104);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute  
 }
 
 .socialmedialogos {
@@ -41,9 +42,9 @@
 }
 
 .disclaimer {
-  margin-left: 60rem;
   font-weight: 200;
-  text-align: end;
+  text-align: right;
   width: 15%;
   font-size: .7rem;
+  margin-right: 1rem;
 }

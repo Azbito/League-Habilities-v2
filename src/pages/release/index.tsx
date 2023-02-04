@@ -36,7 +36,6 @@ export default function Release() {
 
       <Miscellaneous img="/images/mythic-essence-icon.png" alt="Mythic Essence" data={miscellaneous} />
 
-      <End />
     </div>
   )
 }

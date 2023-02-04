@@ -36,44 +36,10 @@
   
   gap: 4rem;
   font-size: .5rem;
-  
-  @media(max-width: 856px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
- 
 }
 
 .container {
   display: flex;
   justify-content: space-around;
   word-break: break-all;
-
-  @media(max-width: 856px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
 }
-
-
-
-.news {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  strong {
-    cursor: pointer;
-  }
-}
-
-.patch {
-   margin-top: 1.5rem;
-   border-radius: 5px;
-}
-

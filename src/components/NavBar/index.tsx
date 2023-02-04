@@ -1,10 +1,12 @@
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./navbar.module.scss"
 import { animateScroll as scroll } from 'react-scroll'
+import Modal from '../Modal'
 
 export default function NavBar() {
   const router = useRouter()
+  const [showModal, setShowModal] = useState(false)
 
   function scrollBack() {
     if (router.pathname == "/") {
@@ -14,17 +16,21 @@ export default function NavBar() {
     }
   }
 
+
+
   return (
-    <div className={styles.bar}>
-      <div className={styles.logo} onClick={scrollBack}>
-        <strong>League Habilities</strong>
+    <>
+      <div className={styles.bar}>
+        <div className={styles.logo} onClick={scrollBack}>
+          <strong>League Habilities</strong>
+        </div>
+        <div className={styles.item}>
+          <p className={styles.link} onClick={() => alert("Work in progress")}>Home</p>
+          <p className={styles.link} onClick={() => alert("Work in progress")}>About</p>
+          <p className={styles.link} onClick={() => setShowModal(true)}>Contact</p>
+        </div>
       </div>
-      <div className={styles.item}>
-        <p className={styles.link} onClick={() => alert("Work in progress")}>Menu</p>
-        <p className={styles.link} onClick={() => alert("Work in progress")}>Home</p>
-        <p className={styles.link} onClick={() => alert("Work in progress")}>About</p>
-        <p className={styles.link} onClick={() => alert("Work in progress")}>Contact</p>
-      </div>
-    </div>
+      <Modal isOpen={showModal} setIsOpen={setShowModal} />
+    </>
   )
 }

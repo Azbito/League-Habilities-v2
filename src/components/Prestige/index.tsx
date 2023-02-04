@@ -1,4 +1,4 @@
-import styles from '../../styles/prestige.module.scss'
+import styles from './prestige.module.scss'
 
 type PrestigeProps = {
   title: string,
