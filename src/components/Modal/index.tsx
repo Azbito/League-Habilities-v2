@@ -49,7 +49,7 @@ export default function Modal({ isOpen, setIsOpen }: ModalProps) {
       <div className={styles.container}>
         <div className={styles.text}>
           <h1 className={styles.title}>Contact Us!</h1>
-          <p className={styles.description}>League Abilities' Team is always here for you. Follow us in all social media to get tuned in!</p>
+          <p className={styles.description}>League Habilities' Team is always here for you. Follow us in all social media to get tuned in!</p>
         </div>
         <div className={styles.socialmedia}>
           <button className={styles.facebook}>

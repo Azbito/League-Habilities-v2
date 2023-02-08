@@ -16,8 +16,6 @@ export default function NavBar() {
     }
   }
 
-
-
   return (
     <>
       <div className={styles.bar}>
@@ -25,8 +23,8 @@ export default function NavBar() {
           <strong>League Habilities</strong>
         </div>
         <div className={styles.item}>
-          <p className={styles.link} onClick={() => alert("Work in progress")}>Home</p>
-          <p className={styles.link} onClick={() => alert("Work in progress")}>About</p>
+          <p className={styles.link} onClick={scrollBack}>Home</p>
+          <p className={styles.link} onClick={() => router.push('/about')}>About</p>
           <p className={styles.link} onClick={() => setShowModal(true)}>Contact</p>
         </div>
       </div>

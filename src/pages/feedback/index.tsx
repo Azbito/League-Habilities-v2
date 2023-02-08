@@ -12,7 +12,7 @@ export default function Feedback() {
           <h1 className={styles.title}>Say your opinion about our site, a suggestion or even a bug report!</h1>
           <TextArea height="20rem" />
           <Input placeholder="Type your first name" width="20rem" />
-          <Input placeholder='Type your email' width="20rem" />
+          <Input type="email" placeholder='Type your email' width="20rem" />
 
           <Button margin="2rem 0 2rem 0" padding=".8rem" isBlue title='Send'
             onClick={() => alert("Sent")}

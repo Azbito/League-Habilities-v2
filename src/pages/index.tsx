@@ -70,7 +70,8 @@ export default function Home() {
         <ChampionCard margin="7rem 0 0 3rem" title="Time to feast!" image="/images/kogmaw.jpg" alt="Kog'Maw" description="Void's creature is getting hungry. Take care in Runeterra!"
           buttonProps={{
             title: "Check it out!",
-            margin: "1rem 0 0 0"
+            margin: "1rem 0 0 0",
+            onClick: () => router.push('/kog_maw')
           }}
 
         />

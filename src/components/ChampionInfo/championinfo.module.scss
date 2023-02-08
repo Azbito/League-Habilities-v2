@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  margin-top: 7rem;
+}
+
+.splashart {
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 0 0 2rem 2rem;
+}
+
+.difficultyclass {
+  font-size: 1.5rem;
+  background-color: rgba(62, 85, 74, 0.562);
+  padding: 1rem;
+  gap: 1rem;
+  margin-right: 42rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.difficulty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.difficultytitle {
+  margin-bottom: 1.2rem;
+}
+
+.class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0 0 0rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.lore {
+  margin-top: 1rem;
+  width: 80%;
+  text-align: start;
+}
+
+.skillstitle {
+  font-size: 2rem;
+}
+
+.passivedescription {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skill {
+  border-radius: 0.7rem;
+}
+
+.card {
+  background-color: rgb(111, 42, 175);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 40%;
+}
