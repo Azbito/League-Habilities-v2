@@ -1,21 +1,17 @@
 .releaseimage {
-
   margin: 10rem 0 0 3rem;
   width: 40rem;
-  height: 20rem;
+  height: 23rem;
   border-radius: 0.7rem;
 }
 
-    .infobox {
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-      margin: -18rem 0 5rem 45rem;
-      .detaileddescription {
-        font-size: 1.2rem;
-        width: 68%;
-      }
-    }
-  
-
-  
+.infobox {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: -20rem 0 5rem 45rem;
+  .detaileddescription {
+    font-size: 1.2rem;
+    width: 68%;
+  }
+}

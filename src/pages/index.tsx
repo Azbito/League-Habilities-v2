@@ -87,7 +87,8 @@ export default function Home() {
         <ChampionCard margin="7rem 3rem 0 0" title="Energize yourself!" image="/images/zeri.jpg" alt="Zeri" description="Don't you dare to steal her thunder"
           buttonProps={{
             title: "Check it out!",
-            margin: "1rem 0 0 0"
+            margin: "1rem 0 0 0",
+            onClick: () => router.push('/zeri')
           }} />
 
       </div>

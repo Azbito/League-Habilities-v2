@@ -154,6 +154,5 @@ export default function ChampionInfo({
         </div>
       </div>
     </div>
-
   )
 }
