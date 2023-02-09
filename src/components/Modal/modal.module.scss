@@ -1,11 +1,9 @@
-
-
 .container {
   background-color: rgba(0, 0, 0, 0.479);
-  border-radius: .2rem;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(.3rem);
+  border-radius: 0.2rem;
+
+  backdrop-filter: blur(0.3rem);
+  padding: 2rem;
 }
 
 .text {
@@ -22,8 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
-
+  gap: 0.5rem;
   margin-top: 20%;
 }
 
@@ -38,19 +35,18 @@
 
   gap: 1rem;
 
-  padding: .5rem;
+  padding: 0.5rem;
 
-  border-radius: .3rem;;
+  border-radius: 0.3rem;
   background-color: rgb(53, 53, 226);
 }
 
 .facebook:hover {
-  transition: .2s;
+  transition: 0.2s;
   background-color: rgb(35, 35, 170);
 }
 
 .instagram {
-
   outline: none;
   border: none;
   cursor: pointer;
@@ -61,19 +57,18 @@
 
   gap: 1rem;
 
-  padding: .5rem;
+  padding: 0.5rem;
 
-  border-radius: .3rem;;
+  border-radius: 0.3rem;
   background-color: rgb(255, 136, 136);
 }
 
 .instagram:hover {
-  transition: .2s;
+  transition: 0.2s;
   background-color: rgb(207, 99, 99);
 }
 
 .discord {
-
   outline: none;
   border: none;
   cursor: pointer;
@@ -84,19 +79,18 @@
 
   gap: 1rem;
 
-  padding: .5rem;
+  padding: 0.5rem;
 
-  border-radius: .3rem;;
+  border-radius: 0.3rem;
   background-color: rgb(68, 87, 255);
 }
 
 .discord:hover {
-  transition: .2s;
+  transition: 0.2s;
   background-color: rgb(50, 66, 202);
 }
 
 .github {
-
   outline: none;
   border: none;
   cursor: pointer;
@@ -107,13 +101,13 @@
 
   gap: 1rem;
 
-  padding: .5rem;
+  padding: 0.5rem;
 
-  border-radius: .3rem;;
+  border-radius: 0.3rem;
   background-color: rgb(53, 134, 226);
 }
 
 .github:hover {
-  transition: .2s;
+  transition: 0.2s;
   background-color: rgb(36, 99, 172);
 }

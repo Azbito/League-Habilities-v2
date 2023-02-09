@@ -36,7 +36,7 @@ export default function Modal({ isOpen, setIsOpen }: ModalProps) {
           transform: "translate(-50%, -50%)",
           background: 'transparent',
           border: 'none',
-          width: "35rem",
+          width: "40rem",
           height: "30rem",
           display: "flex",
           alignItems: "center",
